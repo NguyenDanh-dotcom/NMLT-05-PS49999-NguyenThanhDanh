@@ -8,9 +8,9 @@ int main() {
     scanf("%f", &b);
     printf("Chu vi hinh chu nhat: %.2f\n", 2*(a+b));
     printf("Dien tich hinh chu nhat: %.2f\n", a*b);
-    //nhap r, #define pi= 3.14159 tinh chu vi, dien tich hinh tron
+    //nhap r, pi= 3.14159 tinh chu vi, dien tich hinh tron
     float r;
-    #define pi 3.14159
+    const float pi = 3.14159;
     printf("Nhap ban kinh hinh tron: ");
     scanf("%f", &r);
     printf("Chu vi hinh tron: %.2f\n", 2*pi*r);
