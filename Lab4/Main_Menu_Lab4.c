@@ -7,6 +7,7 @@ int main()
     int tong = 0;
     int bienDem = 0;
     int x, i;
+    int X, I;
 
     do
     {
@@ -64,7 +65,7 @@ int main()
             scanf("%d", &x);
             if (x < 2)
             {
-                printf("x khong phai la so nguyen to \n");
+                printf("%d khong phai la so nguyen to \n", x);
                 break;
             }
             else
@@ -82,13 +83,31 @@ int main()
                 }
                 else
                 {
-                    printf("x khong phai la so nguyen to \n");
+                    printf("%d khong phai la so nguyen to \n", x);
                 }
             }
             break;
 
         case 3:
             printf("Ban chon chuc nang: 3.Kiem tra So chinh phuong\n");
+            printf("Nhap so X: ");
+            scanf("%d", &X);
+            for ( I = 1; I * I <= X; I++)
+            {
+                if (I * I == X)
+                {
+                    break;
+                }
+            }
+            if (I * I == X)
+            {
+                printf("%d la so chinh phuong \n", X);
+            }
+            else
+            {
+                printf("%d khong la so chinh phuong \n", X);
+            }
+
             break;
         case 4:
             printf("Ban chon chuc nang: 4.Thoat chuong trinh\n");
