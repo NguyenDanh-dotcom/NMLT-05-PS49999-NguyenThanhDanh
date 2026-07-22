@@ -3,6 +3,10 @@
 int main()
 {
     int chon;
+    int min, max;
+    int tong = 0;
+    int bienDem = 0;
+    int x, i;
 
     do
     {
@@ -19,9 +23,7 @@ int main()
         switch (chon)
         {
         case 1:
-            int min, max;
-            int tong = 0;
-            int bienDem = 0;
+
             printf("Ban chon chuc nang: 1.Tinh trung binh tong cac so chia het cho 2\n");
             do
             {
@@ -58,7 +60,33 @@ int main()
             break;
         case 2:
             printf("Ban chon chuc nang: 2.Kiem tr So nguyen to\n");
+            printf("Nhap x: ");
+            scanf("%d", &x);
+            if (x < 2)
+            {
+                printf("x khong phai la so nguyen to \n");
+                break;
+            }
+            else
+            {
+                for (i = 2; i <= x - 1; i++)
+                {
+                    if (x % i == 0)
+                    {
+                        break;
+                    }
+                }
+                if (i == x)
+                {
+                    printf("%d la so nguyen to \n", x);
+                }
+                else
+                {
+                    printf("x khong phai la so nguyen to \n");
+                }
+            }
             break;
+
         case 3:
             printf("Ban chon chuc nang: 3.Kiem tra So chinh phuong\n");
             break;
