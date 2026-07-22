@@ -3,6 +3,7 @@
 int main()
 {
     int chon;
+
     do
     {
         printf("+-----------------------------------------------+\n");
@@ -18,7 +19,42 @@ int main()
         switch (chon)
         {
         case 1:
+            int min, max;
+            int tong = 0;
+            int bienDem = 0;
             printf("Ban chon chuc nang: 1.Tinh trung binh tong cac so chia het cho 2\n");
+            do
+            {
+                printf("Nhap min va max: ");
+                scanf("%d %d", &min, &max);
+                if (min > max)
+                {
+                    printf("Phai nhap min:%d lon hon max:%d\n", min, max);
+                }
+
+            } while (min > max);
+
+            for (int i = min; i <= max; i++)
+
+            {
+                if (i % 2 == 0)
+                {
+                    tong += i;
+                    bienDem++;
+                }
+            }
+            if (bienDem > 0)
+            {
+                float trungBinh = (float)tong / bienDem;
+                printf("Tong cac so chia het cho 2: %d\n", tong);
+                printf("So luong so chia het cho 2: %d\n", bienDem);
+                printf("Trung binh cong: %.2f\n", trungBinh);
+                break;
+            }
+            else
+            {
+                printf("khong co so nao chia het cho 2\n");
+            }
             break;
         case 2:
             printf("Ban chon chuc nang: 2.Kiem tr So nguyen to\n");
