@@ -52,7 +52,6 @@ int main()
                 printf("Tong cac so chia het cho 2: %d\n", tong);
                 printf("So luong so chia het cho 2: %d\n", bienDem);
                 printf("Trung binh cong: %.2f\n", trungBinh);
-                break;
             }
             else
             {
@@ -92,7 +91,7 @@ int main()
             printf("Ban chon chuc nang: 3.Kiem tra So chinh phuong\n");
             printf("Nhap so X: ");
             scanf("%d", &X);
-            for ( I = 1; I * I <= X; I++)
+            for (I = 1; I * I <= X; I++)
             {
                 if (I * I == X)
                 {
