@@ -37,7 +37,7 @@ int main()
 
             } while (min > max);
 
-            for (int i = min; i <= max; i++)
+            for (i = min; i <= max; i++)
 
             {
                 if (i % 2 == 0)
